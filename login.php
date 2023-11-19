@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION["user"])) {
-    header("Location: index.php");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,8 +9,8 @@ if (isset($_SESSION["user"])) {
 </head>
 
 <body>
-    <div class="container">
 
+    <div class="container">
         <img src="Logo.png" alt="Logo">
         <h1>Account Login</h1>
         <div class="form-container">
@@ -33,6 +26,11 @@ if (isset($_SESSION["user"])) {
                 <div class="form-group">
                     <input type="checkbox" name="remember" id="remember">
                     <label for="remember">Remember Me</label>
+                    <label class="forgot-password" for="forgot-password">
+                        <a href="forgetpassword.php">
+                            Forgot Password?
+                        </a>
+                    </label>
                 </div>
                 <div class="form-btn">
                     <button type="submit" value="Login" name="login" class="btn btn-primary">
@@ -40,7 +38,7 @@ if (isset($_SESSION["user"])) {
                     </button>
                 </div>
                 <div>
-                    <p>Dont Have an Account? <a href="registration.php">Register Here</a></p>
+                    <p>Dont Have an Account? <a href="register.php">Register Here</a></p>
                 </div>
             </form>
         </div>

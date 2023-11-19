@@ -1,10 +1,3 @@
-<?php
-session_start();
-if (isset($_SESSION["user"])) {
-    header("Location: index.php");
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,17 +5,15 @@ if (isset($_SESSION["user"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=R, initial-scale=1.0">
     <title>Registration</title>
-    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 
 <body>
-
     <div class="container">
-        <img src="logo.png" alt="Logo">
+        <img src="Logo.png" alt="Logo">
         <h1>Registration</h1>
         <div class="form-container">
-            <form action="registration.php" method="post">
-
+            <form action="register.php" method="post">
                 <div class="flex-container-name">
                     <div class="form-group">
                         <label>First Name</label>

@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+/*----------Side Bar----------*/
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    height: 100vh;
+    color: #FFF;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #F28C28;
+}
+
+.sidebar:hover {
+    width: 220px;
+    transition: 0.5s;
+}
+
+.logo {
+    height: 80px;
+    border-bottom: 3px solid #FFAC1C;
+}
+
+.logo img {
+    width: 80%;
+    height: 80%;
+    transform: translate(12%, 8%);
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.menu li:hover,
+.active {
+    background: #e0e0e058
+}
+
+.menu a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.logout {
+    position: absolute;
+    margin-bottom: 50px;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+}
+
+/*----------Main Content----------*/
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 1050px;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.header-title {
+    color: #F28C28;
+}
+
+.search--box {
+    background: #ebe9e9;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input {
+    background-color: transparent;
+    padding: 10;
+}
+
+.search-box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.search-box i:hover {
+    transform: scale(1.2);
+}
+
+.search-edit {
+    display: flex;
+}
+
+.search-edit button {
+    display: flex;
+    align-content: space-between;
+    width: 65px;
+    border-radius: 10px;
+    background-color: #F28C28;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-edit button i {
+    font-size: 1rem;
+    margin-right: 3px;
+}
+
+.table-wrapper {
+    background: #FFF;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table-container {
+    border-radius: 10px;
+    max-height: 480px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #F28C28;
+    color: #000;
+}
+
+th {
+    position: sticky;
+    padding: 5px;
+    text-align: left;
+}
+
+tbody {
+    background: #ebe9e9;
+}
+
+tbody tr button {
+    width: 65px;
+    border-radius: 10px;
+    background-color: #F28C28;
+    cursor: pointer;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+tr:nth-child(even) {
+    background: #FFF;
+}
+
+/*----------Update Incidents----------*/
+.update-incidents {
+    display: none;
+    width: 100%;
+    background: #FFF;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.update-incidents input[type="text"] {
+    background-color: #ebe9e9;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #ebe9e9;
+    border-radius: 5px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #F28C28;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+.form-title {
+    color: #F28C28;
+}
+
+.button-wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.button-wrapper button {
+    background-color: #F28C28;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.form-container .title {
+    font-size: 25px;
+    color: #000;
+}
+
+.responder-information {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.incident-information {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.alarm-status {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
