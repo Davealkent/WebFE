@@ -16,24 +16,24 @@
         </div>
         <ul class="menu">
             <li>
-                <a href="#">
-                    <i class="fa-regular fa-user"></i>
-                    <span>Profile</span>
-            </li>
-            <li>
-                <a href="#">
+                <a href="incidents-management.php">
                     <i class="fa-solid fa-triangle-exclamation"></i>
                     <span>Fire Incidents</span>
             </li>
             <li>
-                <a href="#">
+                <a href="predictiveanalysis.php">
                     <i class="fa-solid fa-computer"></i>
                     <span>Predictive Analysis</span>
             </li>
             <li>
-                <a href="#">
+                <a href="profile.php">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+            </li>
+            <li>
+                <a href="aboutus.php">
                     <i class="fa-solid fa-circle-info"></i>
-                    <span>About</span>
+                    <span>About Us</span>
             </li>
             <li class="logout">
                 <a href="#">
@@ -73,7 +73,6 @@
                         <th>Address</th>
                         <th>Type of Occupancy</th>
                         <th>Status</th>
-                        <th>Edit</th>
                     </thead>
                     <tbody>
                         <tr>
@@ -85,11 +84,8 @@
                             <td>02/29/2023</td>
                             <td>Regency National High School</td>
                             <td>Security Guard</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button" type="submit">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -101,11 +97,8 @@
                             <td>02/29/2023</td>
                             <td>Iponan National High School</td>
                             <td>Teacher</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button" type="submit">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -117,11 +110,8 @@
                             <td>02/29/2023</td>
                             <td>Cagayan National High School</td>
                             <td>Janitor</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -133,11 +123,8 @@
                             <td>02/29/2023</td>
                             <td>Initao Comprehensive High School</td>
                             <td>Principal</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -149,11 +136,8 @@
                             <td>02/29/2023</td>
                             <td>Bulua National High School</td>
                             <td>Security Guard</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -165,11 +149,8 @@
                             <td>02/29/2023</td>
                             <td>MSU Naawan</td>
                             <td>Teachers</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -181,11 +162,8 @@
                             <td>02/29/2023</td>
                             <td>Bugo National High School</td>
                             <td>Teacher</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -197,11 +175,8 @@
                             <td>02/29/2023</td>
                             <td>Initao Central School</td>
                             <td>Assitant Director</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -213,11 +188,8 @@
                             <td>02/29/2023</td>
                             <td>USTP</td>
                             <td>Tanod</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                         <tr>
@@ -229,11 +201,8 @@
                             <td>02/29/2023</td>
                             <td>Xavier Academy</td>
                             <td>Tanod</td>
-                            <td>null</td>
                             <td>
-                                <button class="edit-button">
-                                    Edit
-                                </button>
+                                <div class="circle"></div>
                             </td>
                         </tr>
                     </tbody>
@@ -336,7 +305,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var editButtons = document.querySelectorAll(".edit-button");
+            var editButtons = document.querySelectorAll(".edit--button");
             var tableWrapper = document.querySelector(".table-wrapper");
             var updateIncidents = document.querySelector(".update-incidents");
             var cancelButton = document.querySelector(".cancel-button");
